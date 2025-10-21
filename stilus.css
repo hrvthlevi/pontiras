@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: black url(hatterem3.jpg) repeat;
+}
+#tarolo {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  background-color: #606060;
+  color: #e5e3e1;
+}
+.fejlec {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: smaller;
+  padding: 3px;
+}
+.fejlec h1 {
+  border-bottom: dotted;
+  border-width: 3px;
+  border-color: #7d7d7c;
+}
+.tartalom {
+  padding: 10px;
+  text-align: justify;
+}
+.menu {
+  background: rgb(170, 167, 167);
+}
+.menu ul {
+  margin: 0%;
+  padding: 0%;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 100px 100px;
+}
+.menu li {
+  padding: 10px;
+  border-right: 1px solid whitesmoke;
+  text-align: center;
+}
+.menu li:hover {
+  background-color: rgb(56, 55, 54);
+}
+.menu li:hover a {
+  color: red;
+}
+.menu a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.kepesszoveg{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+img {
+  width: 100%;
+  padding: 2px;
+  border: 1px dotted;
+  border-width: 3px;
+  border-color: #7d7d7c;
+}
+.lablec {
+  background-color: rgb(170, 167, 167);
+  padding: 5px;
+  text-align: center;
+}
+.kepek{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+@media screen and (max-width: 500px) {
+  .menu ul {
+    grid-template-columns: 1fr;
+  }
+  #tarolo {
+    width: 100%;
+    font-size: calc(10px + 4vw);
+  }
+  .kepesszoveg{
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width:600px){
+  .kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width:400px) {
+  .kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
